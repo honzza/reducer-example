@@ -6,6 +6,7 @@ import List from "./List";
 const DUMMY_DATA = ["robot", "auto", "text3", "text6", "automobil", "rosa"];
 
 export default function FilterSearchBar() {
+  // Define reducer
   const initialState = { data: DUMMY_DATA, filter: "" };
   const reducer = (state, action) => {
     return { filter: action.filter, data: action.data };
